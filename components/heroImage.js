@@ -82,6 +82,9 @@ const HeroImage = ({ title, description, size }) => {
             font-size: 1.4em;
             line-height: 2;
           }
+          .hero-container {
+            padding: 0rem;
+          }
         }
       `}</style>
     </div>
