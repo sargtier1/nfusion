@@ -1,8 +1,15 @@
 import Layout from '../components/layout'
 import { Row, Col, Code, Spacer, Divider } from '@zeit-ui/react'
+import Hero from '../components/heroImage'
+import useDocumentScrollThrottled from '../lib/hooks/scroll'
 
 const Home = () => (
   <Layout title='Welcome to my site'>
+    <Hero
+      title='N-Fusion Solutions'
+      description="DFW's Newest, Premier Web Development and Internet Marketing Agency"
+      size='85'
+    />
     <Spacer y={2} />
     <Row justify='center' align='middle' gap={2}>
       <div className='wrapper'>

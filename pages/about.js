@@ -9,6 +9,7 @@ import {
   Spacer,
   Collapse,
 } from '@zeit-ui/react'
+import Hero from '../components/hero'
 import data from '../lib/data/about.json'
 
 export default function About() {
@@ -16,6 +17,11 @@ export default function About() {
 
   return (
     <Layout title='About Salvatore Argentieri'>
+      <Hero
+        title='About N-Fusion'
+        description='Meet the people that make up N-Fusion'
+        size='55'
+      />
       <Row gap={2}>
         <Col span={24}>
           <h2>
