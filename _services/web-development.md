@@ -1,7 +1,7 @@
 ---
 'title': 'Web Development'
+'excerpt': 'hello there'
 'coverImage': '/assets/services/progressive.svg'
-'excerpt': 'Your business didn’t just come out of a box, and neither should a custom website. See how we build custom, industry specific websites that will catch customers attention on the first visit.'
 'date': '2020-03-16T05:35:07.322Z'
 ---
 

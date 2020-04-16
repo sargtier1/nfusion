@@ -6,7 +6,7 @@ const PostList = ({ posts }) => {
   return (
     <>
       {posts &&
-        posts.map(({ title, slug, date, coverImage }, i) => (
+        posts.map(({ title, slug, date, coverImage, preview }, i) => (
           <Link key={i} href='/services/[slug]' as={`/services/${slug}`}>
             <a className='cards'>
               <Display
@@ -15,6 +15,7 @@ const PostList = ({ posts }) => {
                 caption={
                   <div className='preview-title'>
                     <Text h3>{title}</Text>
+                    <Text p>{preview}</Text>
                   </div>
                 }
               >

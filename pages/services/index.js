@@ -5,6 +5,7 @@ import { getAllPosts } from '../../lib/api'
 import Hero from '../../components/hero'
 
 export default function ServicesPage({ allPosts }) {
+  console.log(allPosts)
   return (
     <Layout title='Services'>
       <Hero
