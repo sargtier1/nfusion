@@ -24,7 +24,7 @@ const Home = () => (
       </svg>
     </div>
     <ServicesIntro />
-    <div style={{ background: 'lightblue' }}>
+    <div style={{ background: '#207ce5' }}>
       <svg
         style={{ transform: 'scale(1, 1)' }}
         xmlns='http://www.w3.org/2000/svg'
@@ -35,14 +35,14 @@ const Home = () => (
       </svg>
     </div>
     <TechIntro />
-    <div className='dots'>
+    <div className=''>
       <svg
         style={{ transform: 'scale(-1, 1)' }}
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 1000 100'
         preserveAspectRatio='none'
       >
-        <path style={{ fill: 'lightblue' }} d='M0,6V0h1000v100L0,6z'></path>
+        <path style={{ fill: '#207ce5' }} d='M0,6V0h1000v100L0,6z'></path>
       </svg>
     </div>
     <CallTo />

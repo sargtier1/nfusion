@@ -1,8 +1,7 @@
 ---
-'title': 'Welcome To My New Portfolio!'
+'title': 'Web Development'
 'excerpt': 'Its been long over due however I finally got around to building out a new static portfolio build using Next.js. I built in a theme provider to switch between light and dark themes too!'
 'coverImage': 'https://og-image.now.sh/**Welcome**%20to%20my%20blog.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-black-triangle.svg'
-'date': '2020-03-16T05:35:07.322Z'
 ---
 
 ## Thanks for checking out my new blog!

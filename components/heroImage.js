@@ -17,7 +17,7 @@ const HeroImage = ({ title, description, size }) => {
       </div>
       <style jsx>{`
         .hero {
-          background: url(./assets/dallasSkyline.jpg);
+          background: url(./assets/skyline.jpg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;

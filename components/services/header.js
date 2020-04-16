@@ -1,17 +1,13 @@
 import Router from 'next/router'
 import { CornerDownLeft } from 'react-feather'
 import { Text, Image, Spacer } from '@zeit-ui/react'
-import Date from './date'
 
 export default function PostHeader({ title, coverImage, date }) {
   return (
     <div className='post-header'>
-      <Text h2>{title}</Text>
       <Spacer y={2} />
       <div className='subtitle'>
-        <Text style={{ margin: 0 }} h3>
-          <Date dateString={date} />
-        </Text>
+        <Text h2>{title}</Text>
         <div className='center back' onClick={() => Router.push('/blog')}>
           <CornerDownLeft size={30} /> <Spacer x={0.5} />
           <Text style={{ margin: 0 }} h4>

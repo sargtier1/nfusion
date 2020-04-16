@@ -7,7 +7,7 @@ const PostList = ({ posts }) => {
     <>
       {posts &&
         posts.map(({ title, slug, date, coverImage }, i) => (
-          <Link key={i} href='/blog/[slug]' as={`/blog/${slug}`}>
+          <Link key={i} href='/services/[slug]' as={`/services/${slug}`}>
             <a className='cards'>
               <Display
                 style={{ maxWidth: '650px' }}
@@ -15,9 +15,6 @@ const PostList = ({ posts }) => {
                 caption={
                   <div className='preview-title'>
                     <Text h3>{title}</Text>
-                    <Text h5 type='secondary'>
-                      <Date dateString={date} />
-                    </Text>
                   </div>
                 }
               >
