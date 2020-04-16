@@ -1,20 +1,12 @@
 ---
 'title': 'Web Development'
-'excerpt': 'Its been long over due however I finally got around to building out a new static portfolio build using Next.js. I built in a theme provider to switch between light and dark themes too!'
-'coverImage': 'https://og-image.now.sh/**Welcome**%20to%20my%20blog.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-black-triangle.svg'
+'coverImage': '/assets/services/progressive.svg'
+'excerpt': 'Your business didn’t just come out of a box, and neither should a custom website. See how we build custom, industry specific websites that will catch customers attention on the first visit.'
+'date': '2020-03-16T05:35:07.322Z'
 ---
 
-## Thanks for checking out my new blog!
+## Building a website from scratch can be scary. N-Fusion Solutions will turn your fear into joy.
 
-I never really haven't had a portfolio that I've been proud of, As a developer a great portfolio is crucial to representing yourself to recruiters and potential employers. I built my last blog roughly a year ago using Gatsby.js. I love the framework, however I do feel it provides too much magic out of the box, so I opted to use Next.js instead.
+Custom coding website development is the foundation in which N-Fusion Solutions was built on. The first step in our web development process is meeting with you understanding what’s real important to your business and your customers. From there, N-Fusion Solutions will begin to build a modern and custom site that you wouldn’t be able to get from one of those out of the box providers. We can even built out content management solution and e-commerce solutions so your clients interact with your business online, and anytime. There’s no need to worry, you’ll be part of every step of the way because, it is your website at the end of the day. When your business begins to grow our homemade code will be built with scalability in mind, ready for any size growth you incur.
 
-This blog takes markdown and coverts them into individual blog posts. You can practically code the page to look anyway you like in these markdown files. Furthermore I optimized the SEO to have customizable OG-image cards so if a post of mine is shared, an image will populate in the link.
-
-Be sure to check back often as I have several posts ready to be published, just need to convert them from notion first :).
-
-### Where to go from here
-
-1. I want to pull data in from my github and display it on the portfolio page. I'm holding off as I have several new projects I'm working on and these take precedence.
-2. Share post button on each blog page.
-3. update design on the landing page.
-4. Printable resume
+It doesn’t matter if you need already have an idea of your website and simply need an expert coder or need to start something from the ground up. N-Fusion Solutions is ready to make your dream a reality.

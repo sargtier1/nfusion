@@ -6,6 +6,15 @@ export default function PostHeader({ title, coverImage, date }) {
   return (
     <div className='post-header'>
       <Spacer y={2} />
+      <div>
+        <Image
+          className='post-image'
+          width='100%'
+          height='auto'
+          src={coverImage}
+        />
+      </div>
+      <Spacer y={2} />
       <div className='subtitle'>
         <Text h2>{title}</Text>
         <div className='center back' onClick={() => Router.push('/blog')}>
@@ -15,15 +24,6 @@ export default function PostHeader({ title, coverImage, date }) {
           </Text>
         </div>
       </div>
-      <Spacer y={2} />
-      <div className='coverImage'>
-        <Image
-          className='post-image'
-          width='100%'
-          height='auto'
-          src={coverImage}
-        />
-      </div>
       <style jsx>{`
         .back {
           cursor: pointer;
@@ -32,9 +32,6 @@ export default function PostHeader({ title, coverImage, date }) {
           display: flex;
           justify-content: space-between;
           align-items: center;
-        }
-        .post-image {
-          height: 450px;
         }
         .post-header {
           width: 60%;
