@@ -17,7 +17,7 @@ export default function PostHeader({ title, coverImage, date }) {
       <Spacer y={2} />
       <div className='subtitle'>
         <Text h2>{title}</Text>
-        <div className='center back' onClick={() => Router.push('/blog')}>
+        <div className='center back' onClick={() => Router.push('/services')}>
           <CornerDownLeft size={30} /> <Spacer x={0.5} />
           <Text style={{ margin: 0 }} h4>
             Back

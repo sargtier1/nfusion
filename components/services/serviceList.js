@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { Display, Text, Spacer } from '@zeit-ui/react'
 import Date from './date'
 
-const PostList = ({ posts }) => {
+export default function ServiceList({ services }) {
   return (
     <>
-      {posts &&
-        posts.map(({ title, slug, date, coverImage, preview }, i) => (
+      {services &&
+        services.map(({ title, slug, date, coverImage, excerpt }, i) => (
           <Link key={i} href='/services/[slug]' as={`/services/${slug}`}>
             <a className='cards'>
               <Display
@@ -15,7 +15,9 @@ const PostList = ({ posts }) => {
                 caption={
                   <div className='preview-title'>
                     <Text h3>{title}</Text>
-                    <Text p>{preview}</Text>
+                    <Text p b>
+                      {excerpt}
+                    </Text>
                   </div>
                 }
               >
@@ -31,6 +33,7 @@ const PostList = ({ posts }) => {
         }
         .preview-title {
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: space-between;
         }
@@ -45,5 +48,3 @@ const PostList = ({ posts }) => {
     </>
   )
 }
-
-export default PostList

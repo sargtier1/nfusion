@@ -1,8 +1,9 @@
 ---
-'title': 'Web Development'
-'excerpt': 'hello there'
-'coverImage': '/assets/services/progressive.svg'
-'date': '2020-03-16T05:35:07.322Z'
+title: 'Web Development'
+excerpt: 'Your business didn’t just come out of a box, and neither should a custom website. See how we build custom, industry specific websites that will catch customers attention on the first visit.'
+metaTitle: 'Dallas Web Development | N-Fusion Solutions'
+coverImage: '/assets/services/progressive.svg'
+date: '2020-03-16T05:35:07.322Z'
 ---
 
 ## Building a website from scratch can be scary. N-Fusion Solutions will turn your fear into joy.

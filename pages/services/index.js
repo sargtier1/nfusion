@@ -1,11 +1,11 @@
 import Layout from '../../components/layout'
 import { Row, Col, Divider } from '@zeit-ui/react'
 import ServiceList from '../../components/services/serviceList'
-import { getAllPosts } from '../../lib/api'
+import { getAllServices } from '../../lib/api'
 import Hero from '../../components/hero'
 
-export default function ServicesPage({ allPosts }) {
-  console.log(allPosts)
+export default function ServicesPage({ allServices }) {
+  console.log(allServices)
   return (
     <Layout title='Services'>
       <Hero
@@ -15,8 +15,8 @@ export default function ServicesPage({ allPosts }) {
       />
       <Row gap={0}>
         <Col span={24}>
-          {allPosts ? (
-            <ServiceList posts={allPosts} />
+          {allServices ? (
+            <ServiceList services={allServices} />
           ) : (
             <h1>Currently there are no posts to view, check back soon!</h1>
           )}
@@ -27,9 +27,15 @@ export default function ServicesPage({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(['title', 'date', 'slug', 'coverImage'])
+  const allServices = getAllServices([
+    'title',
+    'date',
+    'slug',
+    'coverImage',
+    'excerpt',
+  ])
 
   return {
-    props: { allPosts },
+    props: { allServices },
   }
 }
