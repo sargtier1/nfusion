@@ -12,7 +12,7 @@ const Hero = ({ title, description, size }) => {
       <div className='hero-container'>
         <div className='hero-text'>
           <h1>{title}</h1>
-          <p className='zi-content'>{description}</p>
+          <p className='desc'>{description}</p>
         </div>
       </div>
       <style jsx>{`
@@ -34,23 +34,27 @@ const Hero = ({ title, description, size }) => {
         }
         .hero-text {
           color: White;
+          text-align: center
         }
         .hero-text h1 {
-          font-size: 5.5rem;
+          font-size: 4.5rem;
           font-weight: 300;
           line-height: 1.5;
           text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         }
-        .hero-text p {
+        .desc {
           #f8f9fa!important!;
-          font-size: 2.5em;
+          font-size: 1.5em;
           font-weight: 300;
+         
+          margin: 0;
         }
         .hero-container {
           padding: 4em 2em;
           display: flex;
           justify-content: left;
           text-align: left;
+          max-width: 850px;
         }
         @media (max-width: 1025px) {
           .hero {

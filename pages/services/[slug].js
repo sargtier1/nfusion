@@ -22,14 +22,14 @@ export default function Services({ service }) {
           <Spinner size='large' />
         </Row>
       ) : (
-        <Layout title={service.title}>
+        <Layout title={service.metaTitle}>
           <Head>
             <meta property='og:image' content={service.coverImage} />
           </Head>
           <Hero
             title={service.title}
             description={service.excerpt}
-            height={55}
+            height={65}
           />
           <Spacer y={2} />
           <Row justify='center'>

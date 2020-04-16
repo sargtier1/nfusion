@@ -27,14 +27,7 @@ export default function ServicesPage({ allServices }) {
 }
 
 export async function getStaticProps() {
-  const allServices = getAllServices([
-    'title',
-    'date',
-    'slug',
-    'coverImage',
-    'excerpt',
-    'metaTitle',
-  ])
+  const allServices = getAllServices(['title', 'slug', 'coverImage', 'excerpt'])
 
   return {
     props: { allServices },
