@@ -3,17 +3,18 @@ import Head from 'next/head'
 import { Spinner, Row, Col, Spacer } from '@zeit-ui/react'
 import PostHeader from '../../components/services/header'
 import PostBody from '../../components/services/body'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getServicesBySlug, getAllServices } from '../../lib/api'
 import markdownToHtml from '../../lib/html'
 import Layout from '../../components/layout'
 import Hero from '../../components/hero'
 import data from '../../lib/data/service.json'
 
-export default function Post({ post }) {
+export default function Services({ service }) {
   const router = useRouter()
-  if (!router.isFallback && !post?.slug) {
+  if (!router.isFallback && !service?.slug) {
     return <ErrorPage statusCode={404} />
   }
+  console.log(service)
   return (
     <>
       {router.isFallback ? (
@@ -21,21 +22,25 @@ export default function Post({ post }) {
           <Spinner size='large' />
         </Row>
       ) : (
-        <Layout title={post.title}>
+        <Layout title={service.title}>
           <Head>
-            <meta property='og:image' content={post.coverImage} />
+            <meta property='og:image' content={service.coverImage} />
           </Head>
-          <Hero title={post.title} description={post.excerpt} height={55} />
+          <Hero
+            title={service.title}
+            description={service.excerpt}
+            height={55}
+          />
           <Spacer y={2} />
           <Row justify='center'>
             <Col>
-              <PostBody content={post.content} />
+              <PostBody content={service.content} />
             </Col>
           </Row>
           <Spacer y={1} />
           <Row justify='center'>
             <Col>
-              <PostHeader coverImage={post.coverImage} />
+              <PostHeader coverImage={service.coverImage} />
             </Col>
           </Row>
           <Spacer y={1} />
@@ -46,19 +51,21 @@ export default function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const service = getServicesBySlug(params.slug, [
     'title',
     'date',
     'slug',
     'content',
     'coverImage',
+    'excerpt',
+    'metaTitle',
   ])
-  const content = await markdownToHtml(post.content || '')
+  const content = await markdownToHtml(service.content || '')
 
   return {
     props: {
-      post: {
-        ...post,
+      service: {
+        ...service,
         content,
       },
     },
@@ -66,13 +73,13 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const services = getAllServices(['slug'])
 
   return {
-    paths: posts.map((posts) => {
+    paths: services.map((services) => {
       return {
         params: {
-          slug: posts.slug,
+          slug: services.slug,
         },
       }
     }),

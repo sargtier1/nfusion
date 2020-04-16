@@ -2,7 +2,7 @@ import Router from 'next/router'
 import { CornerDownLeft } from 'react-feather'
 import { Text, Image, Spacer } from '@zeit-ui/react'
 
-export default function PostHeader({ title, coverImage, date }) {
+export default function PostHeader({ title, coverImage }) {
   return (
     <div className='post-header'>
       <Spacer y={2} />
