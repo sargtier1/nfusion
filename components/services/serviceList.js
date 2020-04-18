@@ -20,13 +20,23 @@ export default function ServiceList({ services }) {
                   </div>
                 }
               >
-                <img width='' height='450' src={coverImage} alt={title} />
+                <img
+                  className='img'
+                  width='100%'
+                  height='450'
+                  src={coverImage}
+                  alt={title}
+                />
               </Display>
             </a>
           </Link>
         ))}
       <Spacer y={0.5} />
       <style jsx>{`
+        .img {
+          height: 450px;
+          width: 100%;
+        }
         .cards {
           max-width: 500px;
         }
@@ -37,12 +47,13 @@ export default function ServiceList({ services }) {
           justify-content: space-between;
         }
         @media (max-width: 840px) {
-         
           .preview-title {
             flex-direction: column;
           }
+          .img {
+            height: 250px;
+          }
         }
-        @
       `}</style>
     </>
   )
