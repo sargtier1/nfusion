@@ -20,7 +20,7 @@ export default function ServiceList({ services }) {
                   </div>
                 }
               >
-                <img width='100%' src={coverImage} alt={title} />
+                <img width='' height='450' src={coverImage} alt={title} />
               </Display>
             </a>
           </Link>

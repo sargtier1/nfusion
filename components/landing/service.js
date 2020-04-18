@@ -68,7 +68,7 @@ function ServiceCard({ title, description, src }) {
         }}
       >
         <div className='card-wrapper'>
-          <Card style={{ width: '100%', height: '100%' }} shadow>
+          <Card style={{ width: '100%', height: '100%' }}>
             <h3>{title}</h3>
             <Divider />
             <Image src={src} width='100%' />
